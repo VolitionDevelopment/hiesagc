@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="hiesagc" ng-controller="mainCtrl">
+<head>
+    <meta charset="UTF-8">
+    <title>HiesAGC</title>
+    <!--Dependencies-->
+    <link href="/angular-material/angular-material.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Roboto|Alegreya+Sans+SC:300" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" ng-if="isActive('/')">
+    <link href="/stylesheets/volition.css" rel="stylesheet" ng-if="isActive('/')">
+    <link href="/stylesheets/styles.css" rel="stylesheet">
+
+</head>
+<body ng-cloak layout="column">
+
+<div layout="column" layout-fill>
+    <navigation></navigation>
+
+    <md-content flex>
+        <div ng-view="" autoscroll="true"></div>
+        <div class="footer">
+            <ul class="right">
+                <li>Made with <span style="color: red">&lt;3</span> by <a href="http://volition-dev.com">Jackson Yeager</a></li>
+            </ul>
+        </div>
+    </md-content>
+</div>
+
+<!--Dependencies-->
+<script src="/angular/angular.min.js"></script>
+<script src="/angular-animate/angular-animate.min.js"></script>
+<script src="/angular-aria/angular-aria.min.js"></script>
+<script src="/angular-material/angular-material.min.js"></script>
+<script src="/angular-messages/angular-messages.js"></script>
+<script src="/angular-route/angular-route.min.js"></script>
+<script src="/angular-cookies/angular-cookies.min.js"></script>
+
+<!--Atropos Code-->
+<script src="hiesagc.js"></script>
+
+<!--Services-->
+<script src="common/services/auth.service.js"></script>
+<script src="common/services/data.service.js"></script>
+
+<!--Controllers-->
+<script src="common/directives/navigation/navigation.controller.js"></script>
+<script src="home/home.controller.js"></script>
+<script src="common/directives/segment/segment.controller.js"></script>
+
+<!--Directives-->
+<script src="common/directives/navigation/navigation.directive.js"></script>
+<script src="common/directives/compare-to.directive.js"></script>
+<script src="common/directives/scroll-position.directive.js"></script>
+<script src="common/directives/segment/segment.directive.js"></script>
+</body>
+</html>

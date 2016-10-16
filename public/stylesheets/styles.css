@@ -1,0 +1,120 @@
+/* line 1, ../compass/sass/styles.scss */
+*:focus {
+  outline: none;
+}
+
+/* line 5, ../compass/sass/styles.scss */
+body {
+  background-image: url("/images/background.jpg");
+}
+
+/* line 9, ../compass/sass/styles.scss */
+body > div > md-content {
+  background-color: transparent;
+}
+
+/* line 13, ../compass/sass/styles.scss */
+navigation > md-toolbar {
+  top: 0;
+  z-index: 1000;
+  position: absolute;
+}
+
+/* line 19, ../compass/sass/styles.scss */
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+  top: 0;
+}
+
+/* line 26, ../compass/sass/styles.scss */
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+
+/* line 31, ../compass/sass/styles.scss */
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+
+/* line 36, ../compass/sass/styles.scss */
+.video-container {
+  position: relative;
+  top: 0;
+  left: 0%;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+/* line 46, ../compass/sass/styles.scss */
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+/* line 52, ../compass/sass/styles.scss */
+.video-container .filter {
+  z-index: 5;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100vh;
+  height: 100%;
+}
+
+/* line 60, ../compass/sass/styles.scss */
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  top: 20px;
+}
+
+/* line 66, ../compass/sass/styles.scss */
+.video-container video.fillWidth {
+  width: 100%;
+}
+
+/* line 70, ../compass/sass/styles.scss */
+.top {
+  text-align: center;
+  margin-left: 0;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+/* line 78, ../compass/sass/styles.scss */
+.top .top-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 85, ../compass/sass/styles.scss */
+.top h1 {
+  color: white;
+  font-size: 120px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-shadow: 2px 2px 2px black;
+  margin-bottom: 20px;
+}
+/* line 94, ../compass/sass/styles.scss */
+.top p {
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Josefin Sans', sans-serif;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* line 103, ../compass/sass/styles.scss */
+.cover {
+  position: absolute;
+  z-index: 5;
+}

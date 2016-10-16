@@ -1,0 +1,106 @@
+*:focus {
+  outline: none;
+}
+
+body {
+  background-image: url('/images/background.jpg');
+}
+
+body > div > md-content {
+  background-color: transparent;
+}
+
+navigation > md-toolbar {
+  top: 0;
+  z-index: 1000;
+  position: absolute;
+}
+
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+  top: 0;
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+
+.video-container {
+  position: relative;
+  top: 0;
+  left: 0%;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.video-container .filter {
+  z-index: 5;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100vh;
+  height: 100%;
+}
+
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  top: 20px;
+}
+
+.video-container video.fillWidth {
+  width: 100%;
+}
+
+.top {
+  text-align: center;
+  margin-left: 0;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+
+  .top-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  h1 {
+    color: white;
+    font-size: 120px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 1px 1px 2px black;
+  }
+}
+
+.cover {
+  position: absolute;
+  z-index: 5;
+}

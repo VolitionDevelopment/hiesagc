@@ -1,0 +1,6 @@
+.sass-cache/
+.idea/
+node_modules/
+hiesagc.iml
+public/compass/.sass-cache/
+*.mp4

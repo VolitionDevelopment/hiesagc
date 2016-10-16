@@ -1,0 +1,59 @@
+<div style="overflow-y: hidden">
+    <div class="cover"></div>
+    <div class="top">
+        <div class="top-wrapper">
+            <h1>HiesAGC</h1>
+            <p>Make friends, get backstabbed by Yarsawich</p>
+        </div>
+    </div>
+
+    <div class="homepage-hero-module">
+        <div class="video-container">
+            <video autoplay loop class="fillWidth" muted>
+                <source src="/images/background.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
+        </div>
+    </div>
+</div>
+
+<segment title="Who are we?" color="white">
+    <p class="lead">We're a bunch of nerds that play board games. </p>
+    <div class="row">
+        <div class="col-md-4" ng-repeat="person in people track by $index">
+            <img ng-src="{{person.img}}" width="150px" class="img-circle img-thumbnail">
+            <h3>{{person.name}}</h3>
+            <h4>{{person.title}}</h4>
+            <md-button class="md-primary md-raised" style="font-family: 'Roboto', serif" ng-click="openBio($index, $event)">About Me</md-button>
+        </div>
+    </div>
+</segment>
+
+<segment title="What do we play?" color="grey">
+    <div class="row">
+        <div class="col-md-4">
+            <h2><i class="fa fa-map" aria-hidden="true"></i></h2>
+            <h3>Board Games</h3>
+            <p>Heck yes we play bored games! We have the classics such as Monopoly and Catan along with games you've never even heard of. We are always buying new ones with donations.</p>
+        </div>
+        <div class="col-md-4">
+            <h2><i class="fa fa-clone" aria-hidden="true"></i></h2>
+            <h3>Card Games</h3>
+            <p>Card games are a favorite here in the Adventure Gaming Club. We play Durak, Dominion, Flux, Munchkin, and many others.</p>
+        </div>
+        <div class="col-md-4">
+            <h2><i class="fa fa-globe" aria-hidden="true"></i></h2>
+            <h3>Diplomacy</h3>
+            <p>First rule of Diplomacy: Never trust a Yarsawich. This game was made for backstabbers - the only way to victory is to lie and outsmart your opponents.</p>
+        </div>
+    </div>
+</segment>
+
+<segment title="Dumb Questions" color="black">
+    <div class="row">
+        <div class="col-md-4" ng-repeat="question in faq">
+            <h3>{{question.question}}</h3>
+            <p class="lead">{{question.answer}}</p>
+        </div>
+    </div>
+</segment>
+

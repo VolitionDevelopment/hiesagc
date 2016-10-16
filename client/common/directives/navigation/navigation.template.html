@@ -1,0 +1,50 @@
+<md-toolbar class="md-hue-2">
+    <div class="md-toolbar-tools md-whiteframe-4dp">
+        <md-button class="md-icon-button" aria-label="Navigation">
+            <md-icon class="material-icons" ng-click="toggleSidenav()">menu</md-icon>
+        </md-button>
+        <h2>
+            <span>HiesAGC</span>
+        </h2>
+        <span flex></span>
+        <md-button aria-label="Profile">
+            <md-icon class="material-icons">exit_to_app</md-icon>
+            Login
+        </md-button>
+        <md-button aria-label="Profile" class="md-raised md-primary">
+            <md-icon class="material-icons">person_add</md-icon>
+            Register
+        </md-button>
+        <md-button aria-label="Profile">
+            <md-icon class="material-icons">account_circle</md-icon>
+            Profile
+        </md-button>
+        <md-button aria-label="Settings">
+            <md-icon class="material-icons">settings</md-icon>
+            Settings
+        </md-button>
+        <md-button aria-label="Admin Panel">
+            <md-icon class="material-icons">dashboard</md-icon>
+            Admin Panel
+        </md-button>
+    </div>
+</md-toolbar>
+
+<md-sidenav
+        class="md-sidenav-left"
+        md-component-id="navigation" style="z-index: 1000;">
+
+    <md-toolbar>
+        <h1 class="md-toolbar-tools">Navigation</h1>
+    </md-toolbar>
+    <md-content>
+        <md-list flex>
+            <md-list-item class="md-2-line" ng-repeat="item in nav" ng-href="{{item.path}}">
+                <md-icon class="material-icons">{{item.icon}}</md-icon>
+                <div class="md-list-item-text" layout="column">
+                    <h3>{{ item.location }}</h3>
+                </div>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-sidenav>
