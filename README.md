@@ -25,7 +25,9 @@ The Adventure Gaming Club was my favorite club back in High School. I made most 
 ## Installation
 To install and run the website, open your command prompt and enter these commands:
 
-`cd /path/to/repo`
+`git clone https://github.com/VolitionDevelopment/hiesagc`
+
+`cd hiesagc`
 
 `npm install`
 
