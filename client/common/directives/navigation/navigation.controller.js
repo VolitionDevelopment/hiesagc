@@ -8,6 +8,10 @@
             $mdSidenav('navigation').toggle();
         };
 
+        $scope.closeNav = function(){
+            $mdSidenav('navigation').close();
+        };
+
         $scope.nav = [
             {
                 icon: 'home',
@@ -17,7 +21,7 @@
             {
                 icon: 'thumbs_up_down',
                 location: 'Voting',
-                path: '#/vote'
+                path: '#/voting'
             },
             {
                 icon: 'people',

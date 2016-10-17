@@ -12,6 +12,11 @@
                 controller: 'homeCtrl'
             })
 
+            .when('/voting', {
+                templateUrl: 'voting/voting.view.html',
+                controller: 'votingCtrl'
+            })
+
             .otherwise({
                 redirectTo: '/'
             })

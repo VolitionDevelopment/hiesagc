@@ -10,7 +10,7 @@
                 answer: "No, we don't play CoD. We play board games, card games, Diplomacy, and occasionally Civilization."
             },
             {
-                question: "Do you guys play Flux?",
+                question: "Do you guys play Fluxx?",
                 answer: "Not when Lever is here."
             },
             {

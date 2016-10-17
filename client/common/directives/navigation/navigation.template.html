@@ -32,6 +32,7 @@
 
 <md-sidenav
         class="md-sidenav-left"
+        md-whiteframe="4"
         md-component-id="navigation" style="z-index: 1000;">
 
     <md-toolbar>
@@ -39,7 +40,7 @@
     </md-toolbar>
     <md-content>
         <md-list flex>
-            <md-list-item class="md-2-line" ng-repeat="item in nav" ng-href="{{item.path}}">
+            <md-list-item class="md-2-line" ng-repeat="item in nav" ng-href="{{item.path}}" ng-click="closeNav()">
                 <md-icon class="material-icons">{{item.icon}}</md-icon>
                 <div class="md-list-item-text" layout="column">
                     <h3>{{ item.location }}</h3>

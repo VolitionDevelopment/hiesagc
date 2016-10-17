@@ -19,13 +19,8 @@
 <div layout="column" layout-fill>
     <navigation></navigation>
 
-    <md-content flex>
+    <md-content flex style="margin-top: 100px;">
         <div ng-view="" autoscroll="true"></div>
-        <div class="footer">
-            <ul class="right">
-                <li>Made with <span style="color: red">&lt;3</span> by <a href="http://volition-dev.com">Jackson Yeager</a></li>
-            </ul>
-        </div>
     </md-content>
 </div>
 
@@ -48,6 +43,7 @@
 <!--Controllers-->
 <script src="common/directives/navigation/navigation.controller.js"></script>
 <script src="home/home.controller.js"></script>
+<script src="voting/voting.controller.js"></script>
 <script src="common/directives/segment/segment.controller.js"></script>
 
 <!--Directives-->
